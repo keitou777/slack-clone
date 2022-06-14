@@ -1,0 +1,42 @@
+.chatInput {
+  /* border-radius: 20px; */
+  /* flex: 0.1; */
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  left: 250px;
+  bottom: 0;
+  border-top: 1px solid black;
+}
+
+@media (max-width: 600px) {
+  .chatInput {
+    left: 0;
+    position: fixed;
+  }
+}
+
+.chatInput > .form {
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+}
+
+.chatInput > .form > input {
+  /* position: fixed; */
+  left: 194px;
+  bottom: 0px;
+  width: 100%;
+  border: none;
+  padding: 20px 60px;
+  font-size: larger;
+}
+
+.chatInput > .form > input:focus {
+  outline-width: 0;
+  outline: none;
+}
+
+.chatInput > .form > button {
+  display: none !important;
+}

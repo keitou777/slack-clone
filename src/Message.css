@@ -1,0 +1,40 @@
+.message {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.message:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.message > img {
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  /* border-radius: 999px; */
+}
+
+.message_timestamp {
+  color: gray;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.message_info {
+  padding-left: 10px;
+}
+
+.message_info > h4 > .deleteIcon {
+  display: none;
+}
+
+.message:hover > .message_info > h4 > .deleteIcon {
+  display: inline-flex;
+}
+
+.deleteIcon:hover {
+  transform: scale(1.09);
+  color: red;
+}

@@ -1,0 +1,68 @@
+.chat_container {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  top: 50px;
+}
+
+@media (min-width: 600px) {
+  .chat_container {
+    position: fixed;
+    left: 260px;
+    width: calc(100vw - 260px) !important;
+  }
+}
+
+.chat {
+  flex: 0.7;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat_body {
+  overflow-y: scroll;
+  height: calc(100vh - 100px) !important;
+}
+
+.chat_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  position: absolute;
+  background-color: white;
+  width: calc(100vw - 30px);
+}
+
+@media (min-width: 600px) {
+  .chat_header {
+    width: calc(100vw - 290px) !important;
+  }
+}
+
+.chat_channelName {
+  text-transform: lowercase;
+  display: flex;
+}
+
+.chat_channelName > .MuiSvgIcon-root {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.chat_headerRight > p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.chat_headerRight > p > .MuiSvgIcon-root {
+  margin-right: 5px !important;
+  font-size: 16px;
+}
+
+.chat_messages {
+  margin-top: 50px;
+}

@@ -1,0 +1,41 @@
+.welcome_container {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  top: 50px;
+  padding-left: 20px;
+}
+
+.welcome_spacer {
+  min-width: 280px;
+
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .welcome_spacer {
+    max-width: 0;
+
+    display: none;
+  }
+}
+
+.welcome {
+  flex: 0.7;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome_body {
+  /* justify-content: flex-end; */
+  overflow-y: scroll;
+  height: 85vh;
+  /* padding-bottom: 50px; */
+}
+
+@media (max-width: 600px) {
+  .welcome_body {
+    height: 85vh;
+  }
+}
